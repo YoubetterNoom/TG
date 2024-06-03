@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UNO MICHI</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Microsoft+YaHei:wght@700&display=swap');
+
+        body {
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: rgb(129, 96, 6); /* Set background to dark gray */
+            font-family: 'Microsoft YaHei', sans-serif;
+            font-weight: bold;
+            transition: background-color 0.3s ease, background 0.3s ease;
+            overflow: hidden; /* Prevent scrollbar due to falling images */
+            position: relative; /* Required for the pseudo-element */
+            color: white; /* Set text color to white */
+        }
+
+        h1 {
+            margin: 20px 0;
+            font-size: 3em; /* Increased size */
+            color: #e4e4e4; /* Blue color for the title */
+            transition: transform 0.3s ease; /* Transition for hover effect */
+        }
+
+        h1:hover {
+            transform: scale(1.1); /* Zoom effect on hover */
+        }
+
+        #carousel {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center; /* Center items horizontally */
+        }
+
+        img {
+            max-width: 50%; /* Adjusted size */
+            height: auto;
+            display: block;
+            transition: transform 0.3s ease;
+            z-index: 2; /* Ensure it stays above the darkening layer */
+
+        }
+
+        img:hover {
+            transform: scale(1.2);
+        }
+
+        .buttons {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+            justify-content: center;
+            z-index: 2; /* Ensure it stays above the darkening layer */
+        }
+
+        .button {
+            margin-top:60px;
+            text-decoration: none;
+            padding: 15px 25px;
+            background-color: #bbbbbb;
+            color: rgb(34, 34, 34);
+            border-radius: 0; /* Removed rounded corners */
+            font-size: 16px;
+            font-weight: bold;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: #525252;
+            transform: scale(1.1);
+        }
+
+        .nav-btn {
+            background-color: #333;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: bold;
+            padding: 10px;
+            margin: 0 20px;
+        }
+
+        .nav-btn:hover {
+            background-color: #ebe6d5;
+        }
+
+        .more{
+            color: #181818;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>UNO MICHI</h1>
+    <div id="carousel">
+        <img src="PFP.png" alt="Center Image" id="center-image">
+    </div>
+    <div class="buttons">
+        <a target="_blank" href="https://x.com/UNOMICHII" class="button">Twitter</a>
+        <a target="_blank" href="https://t.me/+ATwzIqnsw0g0NWQx" class="button">Telegram</a>
+        <a target="_blank" href="https://t.me/+ATwzIqnsw0g0NWQx" class="button">Chart</a>
+    </div>
+</body>
+</html>
